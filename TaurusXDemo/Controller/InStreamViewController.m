@@ -113,6 +113,7 @@
 }
 - (void)adComplete {
     NSLog(@"%s",__func__);
+    [self.instream destory];
     [self.adContainerView removeFromSuperview];
 }
 - (void)adImpression {
